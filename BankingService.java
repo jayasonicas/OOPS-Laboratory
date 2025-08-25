@@ -13,7 +13,6 @@ class Account implements BankingService {
     }
 
     private String formatAmount(double amount) {
-       
         if (amount == (int) amount) {
             return String.valueOf((int) amount);
         } else {
@@ -53,7 +52,7 @@ class Account implements BankingService {
 
 
 class Transaction {
-    public void record(String action) {
-   
+    public void log() {
+        System.out.println("Transaction recorded");
     }
 }
