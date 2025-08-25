@@ -1,6 +1,7 @@
 public class BankingSystem {
     public static void main(String[] args) {
-        BankingService account = new Account();  // Polymorphism
+        BankingService account = new Account();
+        Transaction transaction = new Transaction();
 
         // TC1: Deposit ₹1000
         account.deposit(1000);
@@ -14,7 +15,7 @@ public class BankingSystem {
         // TC4: Deposit negative amount
         account.deposit(-200);
 
-        // TC5: Just show balance
-        account.showBalance();
+        // TC5: Log transaction
+        transaction.log();
     }
 }
